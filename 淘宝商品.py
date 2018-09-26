@@ -99,4 +99,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-#学习崔庆才《python3网络爬虫实战》
