@@ -6,5 +6,5 @@
   2. 在web ui的安装机器上找到debug.min.css文件，替换掉里面的内容
     vi /usr/local/lib/python2.7/site-packages/pyspider/webui/static/debug.min.css
     
-## 经过他的方法后还是不能够正常显示，需要在web显示界面下再次点击run按钮。    
+## 经过他的方法后有时还是不能够正常显示，需要在web显示界面下再次点击run按钮，即可显示正常大小。    
     源地址http://www.cnblogs.com/zhaohz/p/9300558.html
