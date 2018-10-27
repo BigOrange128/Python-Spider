@@ -13,7 +13,7 @@ sql = 'INSERT INTO {table}({keys}) VALUES ({values}) ON DUPLICATE KEY UPDATE '.f
 update = ','.join(["{key} = %s".format(key=key) for key in data])
 sql += update
 
-db = pymysql.connect(host='localhost', user='root', password='cxc123', port=3306, db='spider')
+db = pymysql.connect(host='localhost', user='root', password='*123', port=3306, db='spider')
 cursor = db.cursor()
 try:
     if cursor.execute(sql, tuple(data.values())*2):
@@ -28,7 +28,7 @@ db.close()
 #创建数据库
 # import pymysql
 #
-# db = pymysql.connect(host='localhost', user='root', password='cxc123', port=3306)
+# db = pymysql.connect(host='localhost', user='root', password='*123', port=3306)
 # cursor = db.cursor()
 # cursor.execute('SELECT VERSION()')
 # data = cursor.fetchone()
@@ -39,7 +39,7 @@ db.close()
 # 创建表
 # import pymysql
 #
-# db = pymysql.connect(host='localhost', user='root', password='cxc123', port=3306, db='spider')
+# db = pymysql.connect(host='localhost', user='root', password='*123', port=3306, db='spider')
 # cursor = db.cursor()
 # sql = 'CREATE TABLE IF NOT EXISTS students (id VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, age INT NOT NULL, PRIMARY KEY (id))'
 # cursor.execute(sql)
