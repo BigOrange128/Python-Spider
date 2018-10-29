@@ -23,8 +23,8 @@ class MongoPipeline(object):
         self.mongo_uri = mongo_uri
         self.mongo_db = mongo_db
 
-    @classmethod                     #挂载装饰器后，通过crawler参数获得全局配置中的每个配置信息（settings.py）
-    def from_crawler(cls ,crawler):
+    @classmethod                           #标识为类方法,类方法可以直接使用类名调用，cls可以看做一个类对象
+    def from_crawler(cls ,crawler):        #通过crawler参数获得全局配置中的每个配置信息（settings.py）
         return cls(
             mongo_uri = crawler.settings.get('MONGO_URI'),
             mongo_db = crawler.settings.get('MONGO_DB')
