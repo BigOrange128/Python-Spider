@@ -14,7 +14,7 @@ browser = webdriver.Chrome(chrome_options=chrome_options)
 # browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 KEYWORD = 'python'
-db = pymysql.connect(host='localhost', user='root', password='cxc123', port=3306, db='spider')
+db = pymysql.connect(host='localhost', user='root', password='*123', port=3306, db='spider')
 
 def index_page(page):
     """
