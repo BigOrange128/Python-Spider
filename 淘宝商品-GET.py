@@ -33,7 +33,7 @@ def parse_page(html):
         }
 
 def save_csv(item):
-    with open('taobao.csv', 'a') as csvfile:
+    with open('taobao.csv', 'a+', encoding = 'utf-8') as csvfile:
         fieldnames = ['title', 'price', 'loc', 'nick']
         writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
         writer.writerow(item)
