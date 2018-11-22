@@ -1,4 +1,5 @@
-# 谷歌浏览器使用pyspider框架时，web预览框只有一小行。
+# 解决pyspider框架web预览框过小问题
+>谷歌浏览器使用pyspider框架时，web预览框只有一小行。
 
 #### 在网上查到解决办法：
 1.从该合并请求中将debug.min.css的改动后的内容复制下来。[请求地址](https://github.com/ok2fly/pyspider/blob/abcfc98970be27dd97901479675ce6df39be63fc/pyspider/webui/static/debug.min.css)
