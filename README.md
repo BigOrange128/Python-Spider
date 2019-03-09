@@ -10,11 +10,11 @@
 
       通过关键词爬取头条图片，保存为图片格式
 - [淘宝商品-GET](https://github.com/BigOrange128/Python-Spider/blob/master/%E6%B7%98%E5%AE%9D%E5%95%86%E5%93%81-GET.py)
-> 因淘宝限制不登录不能看商品列表，爬取前要在代码get_paga函数内的headers内加入cookie的值
+  > 因淘宝限制不登录不能看商品列表，爬取前要在代码get_paga函数内的headers内加入cookie的值
  
       request加re通过关键词爬取淘宝商品信息，保存为CSV
 - [淘宝商品](https://github.com/BigOrange128/Python-Spider/blob/master/%E6%B7%98%E5%AE%9D%E5%95%86%E5%93%81.py)
-> 代码失效，淘宝限制不登录不能查看商品列表，需要改代码加入cookie信息
+  > 代码失效，淘宝限制不登录不能查看商品列表，需要改代码加入cookie信息
  
       驱动chrome浏览器根据关键词爬取淘宝商品信息，mysql存储
 - [猫眼top100](https://github.com/BigOrange128/Python-Spider/blob/master/%E7%8C%AB%E7%9C%BCTOP100.py)
