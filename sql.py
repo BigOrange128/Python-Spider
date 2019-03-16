@@ -13,7 +13,7 @@ sql = 'INSERT INTO {table}({keys}) VALUES ({values}) ON DUPLICATE KEY UPDATE '.f
 update = ','.join(["{key} = %s".format(key=key) for key in data])
 sql += update
 
-db = pymysql.connect(host='localhost', user='root', password='*123', port=3306, db='spider')
+db = pymysql.connect(host='localhost', user='root', password='*', port=3306, db='spider')
 cursor = db.cursor()
 try:
     if cursor.execute(sql, tuple(data.values())*2):
